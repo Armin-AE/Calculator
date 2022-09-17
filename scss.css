@@ -1,0 +1,53 @@
+body {
+  background-color: #09131D;
+  color: white;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont form {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 3px;
+}
+
+.cont form .inpt {
+  grid-column: span 4;
+  background-color: #8fb2ca;
+  border: none;
+  cursor: text;
+}
+
+.cont input {
+  font-size: 24px;
+  padding: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cont .equal {
+  grid-column: span 2;
+  background-color: #CBF7ED !important;
+  color: black !important;
+}
+
+.cont input[type=button] {
+  background-color: #23395B;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=scss.css.map */
+
+@media screen and (max-width: 810px) {
+
+ .cont form{
+  grid-template-columns: repeat(4, 1fr );
+
+ }
+}
